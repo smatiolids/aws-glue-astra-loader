@@ -47,7 +47,7 @@ df.write \
     .mode("append") \
     .options(table="random_model1", keyspace="workshop") \
     .option("spark.cassandra.connection.config.cloud.path","<secure-connect-DBNAME.zip>") \
-    .option("spark.cassandra.auth.username", secret.get('astra_clientid') ) \
+    .option("spark.cassandra.auth.username", "token" ) \
     .option("spark.cassandra.auth.password", secret.get('astra_clientsecret') ) \
     .save()
 
