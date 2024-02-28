@@ -1,0 +1,1 @@
+$SPARK_HOME/bin/spark-submit generate_file.py
