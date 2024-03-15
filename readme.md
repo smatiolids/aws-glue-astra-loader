@@ -39,7 +39,7 @@ For this case, the script needs two files to be stored in a S3 Bucket:
 These files should be referenced in the "Job Details" page:
 
 ### Job parameters
-``````
+```
 –conf
 spark.sql.extensions=com.datastax.spark.connector.CassandraSparkExtensions
 ```
@@ -50,6 +50,7 @@ and
 --packages
 com.datastax.spark:spark-cassandra-connector_2.12:3.5.0
 ```
+
 
 It is possible to add the Astra credentials to the –conf parameter if needed.
 
